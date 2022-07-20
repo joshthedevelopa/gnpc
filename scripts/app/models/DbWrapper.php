@@ -2,16 +2,18 @@
 
 class DbWrapper
 {
-    private static $hostname = 'j5zntocs2dn6c3fj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
-    // private static $hostname = 'localhost:3306';
+    // private static $hostname = 'j5zntocs2dn6c3fj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+    private static $hostname = '';
    
-    private static $dbName = 'vsewzt0a7974sz0s';
+    // private static $dbName = 'vsewzt0a7974sz0s';
+    private static $dbName = 'gnpc';
    
-    private static $username = 'ydy4xi7cs6phl07s';
-    // private static $username = 'bisky';
+    // private static $username = 'ydy4xi7cs6phl07s';
+    private static $username = 'root';
     
-    private static $pwd = 'sv5304xgz4y43rmi';
-    // private static $pwd = 'Zumah$erver2!3!2018$@lpha';
+    // private static $pwd = 'sv5304xgz4y43rmi';
+    private static $pwd = '';
+    
     private static $charset = 'utf8mb4';
     private static $settings = 
     [
