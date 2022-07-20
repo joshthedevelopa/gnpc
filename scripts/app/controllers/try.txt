@@ -4,7 +4,7 @@ INSERT INTO `student` (`sid`, `firstName`,
  `maritalStatus`, `pwd`, `birthDate`, `region`, `district`, `email`, `contact`, `photoExtension`, `disability`, `emergencyNo`, 
  `emergencyName`, `emergencyRelation`, 
  `cgpaCwa`, `scholarshipStatus`, `institution`, 
- `program`, `studentId`, `programType`, `levelOfStudy`, 
+ `program`, `studentId`, `programtype`, `levelOfStudy`, 
  `programStatus`, `cohort`, `referenceId`)
   VALUES (NULL, 'John', 'Doe',
    'Lorem', 'MALE', 'SINGLE', 

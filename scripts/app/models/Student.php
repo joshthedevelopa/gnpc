@@ -80,7 +80,7 @@ class Student extends Model
         "levelOfStudy",
         "program",
         "studentId",
-        "programType",
+        "programtype",
         "programStatus"
        )
    );
@@ -114,7 +114,7 @@ class Student extends Model
     "institution",
     "program",
     "studentId",
-    "programType",
+    "programtype",
     "programStatus"
    );
 
@@ -381,9 +381,9 @@ class Student extends Model
                     IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
                     IF(s.otherName IS NULL, '', s.otherName) AS otherName,
                     IF(s.disability IS NULL, 'NONE', s.disability) AS disability,
-                    IF(pt.name IS NULL, '', pt.name) AS programType,
+                    IF(pt.name IS NULL, '', pt.name) AS programtype,
                     IF(s.referenceId IS NULL, '', s.referenceId) AS referenceId,
-                    IF(pt.name IS NULL, '', pt.name) AS programType,
+                    IF(pt.name IS NULL, '', pt.name) AS programtype,
                     IF(pi.piid IS NULL, '', pi.piid) AS piids,
                     IF(pi.bank IS NULL, '', pi.bank) AS banks,
                     IF(pi.accountNo IS NULL, '', pi.accountNo)     as accountNo,
@@ -391,7 +391,7 @@ class Student extends Model
                     IF(pi.bankBranch IS NULL, '', pi.bankBranch) as bankBranch
                     FROM student s 
                     LEFT JOIN region rg ON s.region = rg.rid
-                    LEFT JOIN programType pt ON s.programType = pt.ptid
+                    LEFT JOIN programtype pt ON s.programtype = pt.ptid
                     LEFT JOIN institution i ON s.institution = i.iid
                     LEFT JOIN paymentinfo pi ON pi.student = s.sid
                     WHERE s.sid=?";
@@ -531,7 +531,7 @@ class Student extends Model
         s.email AS email, s.emergencyNo AS emergencyNo, s.emergencyName AS emergencyName,
         s.emergencyRelation AS emergencyRelation, s.currentCgpa AS currentCgpa, 
         ss.name AS scholarshipStatus, s.institution AS institution, s.program AS program,
-        s.studentId AS studentId, s.programType AS programType, 
+        s.studentId AS studentId, s.programtype AS programtype, 
         s.programStatus AS programStatus,  IF(s.disability IS NULL, 'NO', s.disability) AS disability, r.name AS region
         FROM student s
         INNER JOIN scholarshipStatus ss ON ss.ssid = s.scholarshipStatus
@@ -599,9 +599,9 @@ class Student extends Model
                     IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
                     IF(s.otherName IS NULL, '', s.otherName) AS otherName,
                     IF(s.disability IS NULL, 'NONE', s.disability) AS disability,
-                    IF(pt.name IS NULL, '', pt.name) AS programType,
+                    IF(pt.name IS NULL, '', pt.name) AS programtype,
                     IF(s.referenceId IS NULL, '', s.referenceId) AS referenceId,
-                    IF(pt.name IS NULL, '', pt.name) AS programType,
+                    IF(pt.name IS NULL, '', pt.name) AS programtype,
                     IF(pi.piid IS NULL, '', pi.piid) AS piids,
                     IF(pi.bank IS NULL, '', pi.bank) AS banks,
                     IF(pi.accountNo IS NULL, '', pi.accountNo)     as accountNo,
@@ -609,7 +609,7 @@ class Student extends Model
                     IF(pi.bankBranch IS NULL, '', pi.bankBranch) as bankBranch
                     FROM student s 
                     LEFT JOIN region rg ON s.region = rg.rid
-                    LEFT JOIN programType pt ON s.programType = pt.ptid
+                    LEFT JOIN programtype pt ON s.programtype = pt.ptid
                     LEFT JOIN institution i ON s.institution = i.iid
                     LEFT JOIN paymentinfo pi ON pi.student = s.sid
                     WHERE s.referenceId=? OR s.email=?";

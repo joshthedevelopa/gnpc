@@ -226,7 +226,7 @@ CREATE TABLE `student` (
   `institution` smallint(5) UNSIGNED DEFAULT NULL,
   `program` varchar(100) DEFAULT NULL,
   `studentId` varchar(30) DEFAULT NULL,
-  `programType` tinyint(3) UNSIGNED DEFAULT NULL,
+  `programtype` tinyint(3) UNSIGNED DEFAULT NULL,
   `levelOfStudy` enum('UNDERGRADUATE','MASTERS','PHD') DEFAULT NULL,
   `programStatus` enum('STEM','NON-STEM') DEFAULT NULL,
   `cohort` varchar(10) DEFAULT NULL,
@@ -237,7 +237,7 @@ CREATE TABLE `student` (
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`sid`, `firstName`, `lastName`, `otherName`, `gender`, `maritalStatus`, `pwd`, `birthDate`, `region`, `district`, `email`, `contact`, `photoExtension`, `disability`, `emergencyNo`, `emergencyName`, `emergencyRelation`, `cgpaCwa`, `scholarshipStatus`, `institution`, `program`, `studentId`, `programType`, `levelOfStudy`, `programStatus`, `cohort`, `referenceId`) VALUES
+INSERT INTO `student` (`sid`, `firstName`, `lastName`, `otherName`, `gender`, `maritalStatus`, `pwd`, `birthDate`, `region`, `district`, `email`, `contact`, `photoExtension`, `disability`, `emergencyNo`, `emergencyName`, `emergencyRelation`, `cgpaCwa`, `scholarshipStatus`, `institution`, `program`, `studentId`, `programtype`, `levelOfStudy`, `programStatus`, `cohort`, `referenceId`) VALUES
 (20, 'IRENE', 'BOAKYE', 'ASIAMAH', 'FEMALE', 'MARRIED', '$2y$10$l9/juqFnpAPDx/.NTKP9/.6n9Yh05LlHUctldSzyjtm2A4.iVQckK', '2022-07-06', 1, 'KUMASI', 'boakyeIrene@gmail.com', '233269160708', NULL, NULL, '233544190406', 'Kofi', 'sibling', '89.0000', 2, 2, 'BSc. BUSINESS ADMINISTRATION', '0123651782', 1, NULL, 'NON-STEM', '2022/2023', NULL),
 (21, 'BISMARK ', 'ANSAH', 'KOFI', 'MALE', 'SINGLE', '$2y$10$.EZhJZ2kZFKR1pjO4xi/TulDAuv4Jo4O3XjseZXqNAI6rN9hCm2BK', '2022-07-26', 4, 'Abura', 'bismark@gmail.com', '233269160804', NULL, NULL, '233234567891', 'Grace', 'parent', '3.8000', 3, 1, 'BSc. Computer Science', 'PS/CSC/18/0025', 1, 'UNDERGRADUATE', 'STEM', '2022/2023', NULL),
 (22, 'MARK ', 'TETTEH', 'KOFI', 'MALE', 'SINGLE', '$2y$10$FeAEl8hk8EY7fA2nitgJO.6biA25uSHDpf6j1udhknrjZvllPLkMi', '2013-07-23', 6, 'KWAHU', 'mark@gmail.com', '233543736402', NULL, NULL, '0552372158', 'COMFORT', 'MOTHER', '80.0000', 4, 2, 'BSC ELECTRICAL ENGINEERING', '0982343321', 1, 'UNDERGRADUATE', 'STEM', '2019/2020', NULL),
@@ -314,7 +314,7 @@ ALTER TABLE `student`
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `contact` (`contact`),
   ADD KEY `region` (`region`),
-  ADD KEY `programType` (`programType`),
+  ADD KEY `programtype` (`programtype`),
   ADD KEY `scholarshipStatus` (`scholarshipStatus`),
   ADD KEY `institution` (`institution`);
 
@@ -398,7 +398,7 @@ ALTER TABLE `residence`
 --
 ALTER TABLE `student`
   ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`region`) REFERENCES `region` (`rid`),
-  ADD CONSTRAINT `student_ibfk_2` FOREIGN KEY (`programType`) REFERENCES `programtype` (`ptid`),
+  ADD CONSTRAINT `student_ibfk_2` FOREIGN KEY (`programtype`) REFERENCES `programtype` (`ptid`),
   ADD CONSTRAINT `student_ibfk_3` FOREIGN KEY (`scholarshipStatus`) REFERENCES `scholarshipstatus` (`ssid`),
   ADD CONSTRAINT `student_ibfk_4` FOREIGN KEY (`institution`) REFERENCES `institution` (`iid`);
 --

@@ -151,10 +151,10 @@
                                             <div class="list-group-item">
                                                 <div class="form-group m-0"
                                                      role="group"
-                                                     aria-labelledby="label-programType">
+                                                     aria-labelledby="label-programtype">
                                                     <div class="form-row">
-                                                        <label id="label-programType"
-                                                               for="programType"
+                                                        <label id="label-programtype"
+                                                               for="programtype"
                                                                class="col-md-3 col-form-label form-label">Program Type</label>
                                                         <div class="col-md-9">
                                                         <select id="custom-select"
