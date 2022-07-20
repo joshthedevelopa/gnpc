@@ -106,7 +106,7 @@ if ($scholarshipStatus == SUSPENDED)
                         </ul>
                         <div class="tab-content card-body">
                             <div class="tab-pane active" id="first">
-                                <form action="/scripts/students/basic/info/" id="basic"  method="POST" class="form-horizontal">
+                                <form action="/gnpc/scripts/students/basic/info/" id="basic"  method="POST" class="form-horizontal">
                                     <!-- <div class="form-group row">
                                         <label for="avatar" class="col-sm-3 col-form-label form-label">Avatar</label>
                                         <div class="col-sm-9">
@@ -366,7 +366,7 @@ if ($scholarshipStatus == SUSPENDED)
 
 
                             <div class="tab-pane"  id="third">
-                                <form action="/scripts/students/bank/info/" id="payment" method="POST" class="form-horizontal">
+                                <form action="/gnpc/scripts/students/bank/info/" id="payment" method="POST" class="form-horizontal">
                                     <div class="card">
                                         <h5 class="h5 m-2">CBG Bank Details</h5>
                                         <div class="list-group list-group-fit">

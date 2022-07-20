@@ -12,7 +12,7 @@ header("Access-Control-Allow-Origin: X-API-KEY, origin, X-Requested-With, Conten
 header("Content-Type: application/json");
 // Setting internal encoding for string functions;
 
-// $file = "/scripts/app/uploads/docs/behavorial_assessments/behavorial_assessment.pdf";
+// $file = "/gnpc/scripts/app/uploads/docs/behavorial_assessments/behavorial_assessment.pdf";
 
 // header("Content-Type: application/octet-stream");
 // header("Content-Disposition: attachment: filename= " . urlencode($file));

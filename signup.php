@@ -82,7 +82,7 @@ endif;
                         </button>
                     </div>");
                     ?>
-                    <form action="/scripts/students/signup" novalidate method="POST" class="validator">
+                    <form action="/gnpc/scripts/students/signup" novalidate method="POST" class="validator">
                         <div class="form-group">
                             <label class="form-label" for="firstname">First Name:</label>
                             <div class="input-group input-group-merge">

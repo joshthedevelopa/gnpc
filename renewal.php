@@ -98,7 +98,7 @@ endif;
                                 </div>
                             </div>
                             <h1 class="h2">Renew Scholarship</h1>
-                            <form id="renewal" action="/scripts/students/renew/" method="post" enctype="multipart/form-data">
+                            <form id="renewal" action="/gnpc/scripts/students/renew/" method="post" enctype="multipart/form-data">
                                 <div class="card border-left-3 border-left-primary card-2by1">
                                     <div class="list-group-item">
                                         <div class="form-group m-0" role="group" aria-labelledby="label-cgpa">

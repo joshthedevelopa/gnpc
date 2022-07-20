@@ -378,7 +378,7 @@ class Student extends Model
                     s.emergencyName AS emergencyName, s.emergencyNo AS emergencyNo, s.emergencyRelation AS emergencyRelation,
                     s.photoExtension AS photoExtention, s.program AS program, 
                     s.studentId AS studentId, rg.name AS region,
-                    IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
+                    IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/gnpc/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
                     IF(s.otherName IS NULL, '', s.otherName) AS otherName,
                     IF(s.disability IS NULL, 'NONE', s.disability) AS disability,
                     IF(pt.name IS NULL, '', pt.name) AS programtype,
@@ -481,7 +481,7 @@ class Student extends Model
         //print_r($basicInfoSql);print_r($data);die;
         if ($this->runDml($basicInfoSql, $data)) :
             $this->updateSession();
-            empty($this->files['passportPhoto']['name'])?:$photoPath = "$this->root/scripts/app/uploads/images/passport_photos/$sid.$photoExtension";
+            empty($this->files['passportPhoto']['name'])?:$photoPath = "$this->root/gnpc/scripts/app/uploads/images/passport_photos/$sid.$photoExtension";
             empty($this->files['passportPhoto']['name'])?:$this->saveFile($this->files['passportPhoto'], $photoPath);
         endif;
         return $this->getFeedback('unknownError', $this->pages['undergradApply']);
@@ -596,7 +596,7 @@ class Student extends Model
                     s.emergencyName AS emergencyName, s.emergencyNo AS emergencyNo, s.emergencyRelation AS emergencyRelation,
                     s.photoExtension AS photoExtention, s.program AS program, 
                     s.studentId AS studentId, rg.name AS region,
-                    IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
+                    IF(s.photoExtension IS NULL, 'assets/images/people/50/guy-6.jpg', CONCAT('/gnpc/scripts/app/uploads/images/passport_photos/',sid, '.', s.photoExtension)) AS avatar,
                     IF(s.otherName IS NULL, '', s.otherName) AS otherName,
                     IF(s.disability IS NULL, 'NONE', s.disability) AS disability,
                     IF(pt.name IS NULL, '', pt.name) AS programtype,
