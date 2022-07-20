@@ -1,0 +1,16 @@
+<?php
+INSERT INTO `student` (`sid`, `firstName`,
+ `lastName`, `otherName`, `gender`, 
+ `maritalStatus`, `pwd`, `birthDate`, `region`, `district`, `email`, `contact`, `photoExtension`, `disability`, `emergencyNo`, 
+ `emergencyName`, `emergencyRelation`, 
+ `cgpaCwa`, `scholarshipStatus`, `institution`, 
+ `program`, `studentId`, `programType`, `levelOfStudy`, 
+ `programStatus`, `cohort`, `referenceId`)
+  VALUES (NULL, 'John', 'Doe',
+   'Lorem', 'MALE', 'SINGLE', 
+   '$2y$10$M2VscHXygj4.qsxEEk0sXu0NI8RqvieeTdZ4SkJEHJAo7F16y/HFa',
+    '2022-07-17', '1', '1', 'kofi@gmail.com', '0269160808', NULL, 
+    'paralysis', '0543736408', 'Mr. Boakye', 'sibling', 
+    '3.5', '3', '1', 'Bsc. Computer Science', 
+    'PS/CSC/18/0025', '1', 'UNDERGRADUATE',
+     'STEM', '2019/2020', NULL)

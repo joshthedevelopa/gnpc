@@ -1,0 +1,25 @@
+
+
+.toggle-target {
+    display: none !important;
+  }
+
+.toggle-target[data-value='hide'] {
+  display: none !important;
+}
+
+.toggle-target[data-value='show'] {
+  display: block !important;
+}
+
+.dashboard-card-title {
+  font-weight: 400;
+  letter-spacing: 1.2;
+  color: rgb(83, 83, 83);
+  font-size: .8rem;
+}
+
+.dashboard-card-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
