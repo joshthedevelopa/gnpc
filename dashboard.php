@@ -307,7 +307,7 @@ $fullName = $render->getUserAttribute('firstName') . " " . $render->getUserAttri
                                                        class="nav-link">Profile &amp; Privacy</a>
                                                 </li> -->
                                     </ul>
-                                   
+
                                 </div>
                             </div>
                         </div>
