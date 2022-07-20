@@ -20,17 +20,17 @@ class StudentsCtrlr extends Ctrlr
    
     public array $pages = array
     (
-        "dashboard"=>"/gnpc/dashboard.php",
-        "login"=>"/gnpc/",
-        "signup"=>"/gnpc/signup.php",
-        "changePwd"=>"/gnpc/change_password.php",
+        "dashboard"=>"/dashboard.php",
+        "login"=>"/",
+        "signup"=>"/signup.php",
+        "changePwd"=>"/change_password.php",
         "renewal"=>"renewal.php"
     );
 
     protected $paths = array 
     (
-        "behavorialAssessment"=> "/gnpc/scripts/app/uploads/docs/behavorial_assessments/",
-        "transcript"=> "/gnpc/scripts/app/uploads/docs/transcripts/"
+        "behavorialAssessment"=> "/scripts/app/uploads/docs/behavorial_assessments/",
+        "transcript"=> "/scripts/app/uploads/docs/transcripts/"
     );
     protected const UNDERGRADUATE = 1;
     protected const MASTERS    = 2;
@@ -66,7 +66,7 @@ class StudentsCtrlr extends Ctrlr
 
     public function renew()
     {
-        //move_uploaded_file($_FILES['transcript']['tmp_name'], "/gnpc/scripts/app/uploads/");die;
+        //move_uploaded_file($_FILES['transcript']['tmp_name'], "/scripts/app/uploads/");die;
        if (!($sid = $this->modelClass->getVar('activeUser', 'sid')))
             $this->render($this->errorMessages['signIn']);
         if(empty($this->files['behavorialAssessment']['name']) || empty($this->files['transcript']['name']))

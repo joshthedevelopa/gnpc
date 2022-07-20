@@ -54,7 +54,7 @@
                  style="min-width: 300px;">
                 <div class="text-center mt-5 mb-1">
                     <div class="avatar avatar-lg">
-                        <img src="assets/images/logo/gnpc2.svg"
+                        <img src="assets/images/logo2.svg"
                              class="avatar-img rounded-circle"
                              alt="GNPC Scholarship Portal" />
                     </div>

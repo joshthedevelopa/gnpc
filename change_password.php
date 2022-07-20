@@ -75,7 +75,7 @@ endif;
             <div class="mdk-drawer-layout__content page ">
 
                 <div class="container-fluid page__container p-0">
-                    <form action="/gnpc/scripts/students/password/" method="POST" id="updatePwd" class="validator">
+                    <form action="/scripts/students/password/" method="POST" id="updatePwd" class="validator">
                         <div class="row m-0">
                             <div class="col-lg container-fluid page__container">
                                 <ol class="breadcrumb">

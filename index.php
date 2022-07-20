@@ -50,7 +50,7 @@ endif;
         <div class="col-sm-8 col-md-6 col-lg-4 mx-auto" style="min-width: 300px;">
             <div class="text-center mt-5 mb-1">
                 <div class="avatar avatar-lg">
-                    <img src="assets/images/logo/gnpc2.svg" class="avatar-img rounded-circle" alt="GNPC Scholarship Portal" />
+                    <img src="assets/images/logo2.svg" class="avatar-img rounded-circle" alt="GNPC Scholarship Portal" />
                 </div>
             </div>
             <div class="d-flex justify-content-center mb-5 navbar-light">
@@ -72,7 +72,7 @@ endif;
                         </button>
                     </div>");
                     ?>
-                    <form action="/gnpc/scripts/students/login/" novalidate method="POST">
+                    <form action="/scripts/students/login/" novalidate method="POST">
                         <div class="form-group">
                             <label class="form-label" for="email">email address or gnpc ref</label>
                             <div class="input-group input-group-merge">

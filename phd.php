@@ -69,7 +69,7 @@ endif;
     <!-- // END Header -->
 
     <!-- Header Layout Content -->
-    <form action="/gnpc/scripts/students/apply/" id="apply" method="post" enctype="multipart/form-data"
+    <form action="/scripts/students/apply/" id="apply" method="post" enctype="multipart/form-data"
         class="form-horizontal validator">
         <div class="mdk-header-layout__content">
 

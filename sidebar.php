@@ -139,7 +139,7 @@ $scholarshipStatus = $render->getUserAttribute('scholarshipStatus');
                                         
                                         <li class="sidebar-menu-item">
                                             <a class="sidebar-menu-button"
-                                               href="/gnpc/scripts/students/logout">
+                                               href="/scripts/students/logout">
                                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">lock_open</i> Logout
                                             </a>
                                         </li>

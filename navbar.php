@@ -214,7 +214,7 @@ $scholarshipStatus = $render->getUserAttribute('scholarshipStatus');
                                 <i class="material-icons">person</i> Dashboard
                             </a>
                             <a class="dropdown-item"
-                               href="/gnpc/scripts/students/logout">
+                               href="/scripts/students/logout">
                                 <i class="material-icons">lock</i> Logout
                             </a>
                         </div>

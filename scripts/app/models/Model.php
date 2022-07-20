@@ -17,13 +17,13 @@ abstract class Model extends DbWrapper
     protected array $unknownError              = array('title' => 'error', 'text' => 'Sorry, something went wrong');
     public array $pages = array
     (
-        "dashboard"=>"/gnpc/dashboard.php",
-        "login"=>"/gnpc/",
-        "signup"=>"/gnpc/signup.php",
-        "changePwd"=>"/gnpc/change_password.php",
-        "renewal"=>"/gnpc/renewal.php",
-        "editAccount"=>"/gnpc/student-account-edit.php",
-        "undergradApply"=>"/gnpc/undergraduate.php"
+        "dashboard"=>"/dashboard.php",
+        "login"=>"/",
+        "signup"=>"/signup.php",
+        "changePwd"=>"/change_password.php",
+        "renewal"=>"/renewal.php",
+        "editAccount"=>"/student-account-edit.php",
+        "undergradApply"=>"/undergraduate.php"
     );
     /**
      * field is mandatory for insert

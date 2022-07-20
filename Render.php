@@ -7,8 +7,8 @@ class Render
    private string $feedbackKey;
    private array  $pages = array
    (
-       'login'=>'/gnpc/',
-       'dashboard'=>'/gnpc/dashboard.php'
+       'login'=>'/',
+       'dashboard'=>'/dashboard.php'
    );
    private array $feedbackSuite = array
     (

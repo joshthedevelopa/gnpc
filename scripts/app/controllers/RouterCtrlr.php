@@ -52,7 +52,6 @@ class RouterCtrlr extends Ctrlr
             //gets the name of the controller in PascalCase
             $ctrlr = $this->pascalCase($ctrlr)."Ctrlr";
 
-            // if (file_exists("$this->root/gnpc/scripts/app/controllers/" . $ctrlr . ".php"))
             if (file_exists("$this->root/scripts/app/controllers/" . $ctrlr . ".php"))
             {
                 
