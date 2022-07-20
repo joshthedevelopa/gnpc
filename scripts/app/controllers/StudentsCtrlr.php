@@ -20,10 +20,10 @@ class StudentsCtrlr extends Ctrlr
    
     public array $pages = array
     (
-        "dashboard"=>"/dashboard.php",
-        "login"=>"/",
-        "signup"=>"/signup.php",
-        "changePwd"=>"/change_password.php",
+        "dashboard"=>"/gnpc/dashboard.php",
+        "login"=>"/gnpc/",
+        "signup"=>"/gnpc/signup.php",
+        "changePwd"=>"/gnpc/change_password.php",
         "renewal"=>"renewal.php"
     );
 
