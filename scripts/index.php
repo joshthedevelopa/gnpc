@@ -29,7 +29,7 @@ header("Content-Type: application/json");
 // }
 // fclose($fp);
 // die;
-mb_internal_encoding("UTF-8");
+// mb_internal_encoding("UTF-8");
 /**
  * Callback for autoloading controllers and models
  *
