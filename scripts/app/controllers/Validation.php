@@ -17,15 +17,15 @@ trait Validation
     //  * @param array $vars  
     //  * @return bool
     //  */
-    public function areSet($keys = array(), $vars = $_POST)
-    {
-         foreach($keys as $key)
-         {
-                if(empty($vars[$key]))
-                    return false;
-         } 
-         return true;
-    }
+    // public function areSet($keys = array(), $vars = $_POST)
+    // {
+    //      foreach($keys as $key)
+    //      {
+    //             if(empty($vars[$key]))
+    //                 return false;
+    //      } 
+    //      return true;
+    // }
 
     /**
      * checks if parsed array of columns exists in a table
